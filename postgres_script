@@ -1,0 +1,4 @@
+#!/bin/bash
+
+initdb -D /var/lib/pgsql9/data
+exit

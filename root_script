@@ -1,0 +1,11 @@
+#!/bin/bash
+
+adduser postgres
+yum install postgresql-libs postgresql postgresql-server postgresql-devel
+chown postgres /var/lib/pgsql9/
+su - postgres -c "/home/ec2-user/PostgresInstall/postgres_script"
+service postgresql start
+service postgresql status
+sudo chkconfig postgresql on
+exit
+

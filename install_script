@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd ~
+git clone https://github.com/MattParker89/PostgresInstall.git 
+sudo su - -c "/home/ec2-user/PostgresInstall/root_script"
+echo "Installation was succesful"
